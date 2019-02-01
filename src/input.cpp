@@ -82,6 +82,17 @@ void mouseButton(GLFWwindow *window, int button, int action, int mods) {
     }
 }
 
-void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) {
+void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) 
+{
     // Do something
+    if (yoffset > 0)
+    {
+        screen_zoom+=0.1;
+        reset_screen();
+    }
+    else
+    {
+        screen_zoom-=0.1;
+        reset_screen();
+    }
 }

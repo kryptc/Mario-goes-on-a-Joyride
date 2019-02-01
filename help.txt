@@ -1,0 +1,38 @@
+Mario Goes On A Joyride
+ - 20171159
+
+Welcome to a Jetpack Joyride inspired game, except the player has movement across the XY plane and faces opponents ranging from angry boomerangs to vicious dragons. Collect coins and power ups along the way until you reach the final level where you battle it out against Viserion, the Ice Dragon.
+
+Controls: 
+Left arrow key - go left
+Right arrow key - go right
+Space bar - Jump
+Down arrow key - go down
+W key - long press to toss waterballoon
+Use mouse scroll to zoom in and out
+
+Levels: 3
+
+Enemies: 
+Fire 'Sparky' lines, you lose 15 points if you touch them. Extinguishable by tossing up water balloons, gain 15 points.
+Fire 'Laser Boi' beams, you lose 40 points if you touch them.
+Boomerang, lose 60 points.
+Ice 'Snowballs' balls spit by Viserion, lose 100 points.
+
+Gain points by:
+Collecting coins of various denominations. Gold - 5, cyan - 15, salmon - 25.
+
+Powerups:
+Zoomer - Player zooms forward without hitting any obstacle.
+BigMoney - Player gains 50 points.
+Shield - Once obtained, player has immunity for some time and can kill the dragon by repeatedly ramming into him.
+
+Other stuff:
+Horseshoe magnet - Produces an acceleration towards itself. General pain in the ass.
+Semicircular 'Whee' ring - Once player is on it, he can ride it in eithe rdirection across its perimeter.
+
+Rules:
+Player wins if he kills the dragon and gets the 1000 point bonus.
+Player will die if score goes below -100.
+
+Score and level can be seen on screen.

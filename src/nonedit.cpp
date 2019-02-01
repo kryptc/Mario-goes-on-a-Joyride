@@ -30,7 +30,7 @@ GLFWwindow*initGLFW(int width, int height) {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,           GL_TRUE);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window = glfwCreateWindow(width, height, "Sample OpenGL 3.3 Application", NULL, NULL);
+    window = glfwCreateWindow(width, height, "Mario Goes For A Joyride", NULL, NULL);
 
     if (!window) {
         glfwTerminate();
@@ -187,7 +187,8 @@ struct VAO *create3DObject(GLenum primitive_mode, int numVertices, const GLfloat
 }
 
 /* Generate VAO, VBOs and return VAO handle - Common Color for all vertices */
-struct VAO *create3DObject(GLenum primitive_mode, int numVertices, const GLfloat *vertex_buffer_data, const GLfloat red, const GLfloat green, const GLfloat blue, GLenum fill_mode) {
+struct VAO *create3DObject(GLenum primitive_mode, int numVertices, const GLfloat *vertex_buffer_data, const GLfloat red, const GLfloat green, const GLfloat blue, GLenum fill_mode) 
+{
     GLfloat *color_buffer_data = new GLfloat[3 * numVertices];
     for (int i = 0; i < numVertices; i++) {
         color_buffer_data[3 * i]     = red;
@@ -198,7 +199,8 @@ struct VAO *create3DObject(GLenum primitive_mode, int numVertices, const GLfloat
     return create3DObject(primitive_mode, numVertices, vertex_buffer_data, color_buffer_data, fill_mode);
 }
 
-struct VAO *create3DObject(GLenum primitive_mode, int numVertices, const GLfloat *vertex_buffer_data, const color_t color, GLenum fill_mode) {
+struct VAO *create3DObject(GLenum primitive_mode, int numVertices, const GLfloat *vertex_buffer_data, const color_t color, GLenum fill_mode) 
+{
     return create3DObject(primitive_mode, numVertices, vertex_buffer_data, color.r / 256.0, color.g / 256.0, color.b / 256.0, fill_mode);
 }
 
